@@ -1,4 +1,4 @@
-## vdom-renderer
+## html-renderer
 
 Render HTML content using [Virtual DOM](http://npmjs.org/virtual-dom). This project uses code from [virtual-html](https://github.com/azer/virtual-html) and [html-patcher](https://github.com/azer/html-patcher).
 
