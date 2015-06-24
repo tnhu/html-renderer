@@ -111,7 +111,7 @@ function addDataSet (properties, key, value) {
 }
 
 // @see https://github.com/azer/html-patcher
-function patcher(parentNode, html) {
+function patcher(parentNode, html, elementData) {
   var tree;
   var rootNode;
 
@@ -126,6 +126,9 @@ function patcher(parentNode, html) {
       tree = vdom;
       rootNode = createRootNode(vdom);
       parentNode.appendChild(rootNode);
+      if (elementData) {
+        elementData.element = rootNode;
+      }
       return patch;
     }
 
