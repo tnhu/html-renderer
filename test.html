@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Renderer Test</title>
+</head>
+<body>
+  <script src="html-renderer.js"></script>
+  <script>
+	var counter = 0;
+	var homeRenderer = htmlRenderer(document.body, renderHome());
+	var inboxRenderer = htmlRenderer(document.getElementById('inbox'), renderInbox());
+
+	setInterval(function () {
+	  homeRenderer(renderHome());
+	  inboxRenderer(renderInbox());
+	}, 1000);
+
+	function renderHome() {
+		counter++;
+	  return '<div id="home"><h1>Counter:' + counter + '</h1><div id="inbox"></div></div>';
+	}
+
+	function renderInbox() {
+	  return '<h1>The time now is:<span>' + new Date().toGMTString() + '</span></h1>';
+	}
+  </script>
+</body>
+</html>

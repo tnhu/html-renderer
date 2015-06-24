@@ -1,0 +1,28 @@
+{
+  "name": "html-renderer",
+  "version": "0.0.1",
+  "description": "Virtual DOM HTML renderer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tnhu/html-renderer.git"
+  },
+  "keywords": [
+    "Virtual",
+    "DOM",
+    "Renderer"
+  ],
+  "author": "Tan Nhu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tnhu/html-renderer/issues"
+  },
+  "homepage": "https://github.com/tnhu/html-renderer#readme",
+  "dependencies": {
+    "htmltree": "0.0.4",
+    "virtual-dom": "^2.0.1"
+  }
+}
