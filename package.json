@@ -1,6 +1,6 @@
 {
   "name": "html-renderer",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Virtual DOM HTML renderer",
   "main": "index.js",
   "scripts": {
@@ -23,6 +23,7 @@
   "homepage": "https://github.com/tnhu/html-renderer#readme",
   "dependencies": {
     "htmltree": "0.0.4",
+    "to-camel-case": "^0.2.1",
     "virtual-dom": "^2.0.1"
   }
 }

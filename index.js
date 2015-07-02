@@ -4,6 +4,7 @@ var htmltree = require("htmltree");
 var createRootNode = require('virtual-dom/create-element');
 var diff = require('virtual-dom/diff');
 var applyPatches = require('virtual-dom/patch');
+var camel = require('to-camel-case');
 
 // @see https://github.com/azer/virtual-html
 function virtualHTML (html, callback) {
