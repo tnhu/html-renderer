@@ -74,6 +74,8 @@ function style (raw) {
   return result;
 }
 
+var datasetSupport = !!document.documentElement.dataset;
+
 function createProperties (attributes) {
   var properties = {};
   var attrs = {};
@@ -92,7 +94,7 @@ function createProperties (attributes) {
       properties.htmlFor = attributes['for'];
       break;
     default:
-      if (key.indexOf('data-') === 0) {
+      if (datasetSupport && key.indexOf('data-') === 0) {
         addDataSet(properties, key, attributes[key]);
       } else {
         attrs[key] = attributes[key];
