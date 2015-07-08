@@ -1,6 +1,6 @@
 {
   "name": "html-renderer",
-  "version": "0.0.6   ",
+  "version": "0.0.6",
   "description": "Virtual DOM HTML renderer",
   "main": "index.js",
   "scripts": {
