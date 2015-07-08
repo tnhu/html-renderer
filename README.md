@@ -27,7 +27,7 @@ setInterval(function () {
 }, 1000);
 
 function renderHome() {
-	counter++;
+  counter++;
   return '<div id="home"><h1>Counter:' + counter + '</h1><div id="time"></div></div>';
 }
 
